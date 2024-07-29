@@ -2,8 +2,8 @@ describe('Новый аватар', function () {
 
     it('Новый аватар', function () {
          cy.visit('https://pokemonbattle.ru/');  // зашли на сайт
-         cy.get(':nth-child(1) > .auth__input').type('iuliiakrupenina@yandex.ru');
-         cy.get('#password').type('Milka020720');
+         cy.get(':nth-child(1) > .auth__input').type('USER_LOGIN');
+         cy.get('#password').type('USER_PASSWORD');
          cy.get('.auth__button').click();
          cy.get('.header__btns > :nth-child(4)').click();
          cy.get('.available > .shop__button').first().click();
