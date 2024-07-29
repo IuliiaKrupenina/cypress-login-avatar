@@ -8,7 +8,7 @@ describe('Новый аватар', function () {
          cy.get('.header__btns > :nth-child(4)').click();
          cy.get('.available > .shop__button').first().click();
          cy.get('.pay__payform-v2 > :nth-child(2) > .pay_base-input-v2').type('4111111111111111');
-         cy.get(':nth-child(1) > .pay_base-input-v2').type('12/26');
+         cy.get(':nth-child(1) > .pay_base-input-v2').type('1226');
          cy.get('.pay-inputs-box > :nth-child(2) > .pay_base-input-v2').type('125');
          cy.get('.pay__input-box-last-of > .pay_base-input-v2').type('Iuliia Krupenina');
          cy.get('.pay-btn').click();
